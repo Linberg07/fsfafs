@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+</head>
+<body>
+        
+        <header>
+                <div class="container">
+                        <div class="header-body">
+                                <div class="header__item">
+                                        <img src="img/logo.png" alt="">
+                                </div>
+                                <div class="header__item">
+                                        <p>8 (996) 330-22-34</p>
+                                        <p>roci2020nanah@gmail.com</p>
+                                </div>
+                        </div>
+                </div>
+        </header>
+
+        <div class="content">
+                <div class="container">
+                        <div class="content-body">
+                                <div class="content-body__item content-bg">
+                                        <p class="content-title">Bitcoin Profit - первая<br> управляемая ИИ <br>система</p>
+                                        <p class="content-title_green">Доход- 5%-7% в день<br>Комиссия- 2% от успешной сделки<br>Минимальный депозит- 250$</p>
+                                        
+                                       
+                                </div>
+                                <div class="content-body__item">
+                                        <div class="form-body">
+                                                <form action="" id="form">
+                                                        <p class="form-title">Заполни заявку и получи 100  USDT<br>  и так же уникальную торговую<br> систему "Roci", по которой можно <br>получать доход до 10 $ в день!</p>
+                                                        <div class="form-input">
+                                                                <input type="text" placeholder="Имя" required name="name">
+                                                                <input type="text" placeholder="Ваша электронная почта" required name="email">
+                                                                <input type="text" placeholder="Номер телефона" required name="phone">
+                                                        </div>
+                                                        <div class="submit">
+                                                               <button class="submit-button" type="submit">Получить 100 USDT</button> 
+                                                        </div>
+                                                        
+                                                </form>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <footer>
+                <div class="container">
+                        <div class="footer-body">
+                                <div class="footer__item">
+                                        <p class="footer-title">ИП Казаев Михаил Маратович</p>
+                                        <p class="footer-info">ИНН 025805722508<br>ОГРНИП 320072600001019</p>
+                                </div>
+                                <div class="footer__item">
+                                        <p class="footer-title">Адрес: 360000, КБР, г.Нальчик, ул.Толстого 180 а, офис 304</p>
+                                </div>
+                                <div class="footer__item">
+                                        <p class="footer-title">8 (996) 330-22-34</p>
+                                        <p class="footer-title">roci2020nanah@gmail.com</p>
+                                </div>
+                        </div>
+                </div>
+        </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+        $(document).ready(function(){
+                $("#form").submit(function (e) { // Устанавливаем событие отправки для формы с id=form
+           e.preventDefault();
+            var form_data = $(this).serialize(); // Собираем все данные из формы
+            $.ajax(
+              'contact.php', // Путь до php файла отправителя
+            {
+
+                type: "POST", // Метод отправки
+                
+                data: form_data,
+                success: function () {
+                    // Код в этом блоке выполняется при успешной отправке сообщения
+                    alert("Ваше сообщение отправлено!");
+                    window.open('https://tracking.the-trackers.com/aff_c?offer_id=198&aff_id=2794&url_id=396','_blank');
+                    window.location.href = "https://trackwin.net/go/dba211f7fe1a426b61c3e4242aaa9b3e365b64d1eb0a0b0b/"
+                }
+            });
+        });
+        })
+</script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/anim.js"></script>
+</html>
